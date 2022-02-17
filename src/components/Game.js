@@ -1,6 +1,6 @@
 import React from "react";
 import utils from "../math-utils";
-import PlayAgain from "./PlayAgain";
+import { PlayAgain } from "./PlayAgain";
 import { PlayNumber } from "./PlayNumber";
 import StarsDisplay from "./StarsDisplay";
 import { useEffect, useState } from "react";
@@ -42,7 +42,7 @@ const useGameState = () => {
   };
 };
 
-export const Game = (props) => {
+const Game = (props) => {
   const {
     stars,
     availableNumbers,
@@ -110,3 +110,5 @@ export const Game = (props) => {
     </div>
   );
 };
+
+export default Game;
